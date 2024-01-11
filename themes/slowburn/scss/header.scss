@@ -1,0 +1,53 @@
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    //left: 0;
+    //width: 100%;
+    background: $primary;
+    //background: linear-gradient(white 10%, 90%, transparent 95%);
+}
+/* Title */
+
+.title, .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 1em 1em 1em 3em;
+}
+
+.title {
+    padding: 1em 3em 1em 0;
+}
+
+
+@media (max-width: 767px) {
+    .title {
+        display: none;
+        min-width: 50%;
+    }
+    
+    .logo {
+        max-width: 30%;
+        padding: 1em;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+.title * {
+    color: #111;
+}
+
+.title p {
+    font-style: italic;
+}

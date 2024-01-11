@@ -1,0 +1,30 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass slowburn/scss/style.scss:slowburn/css/style.css slowburn/scss/style-dark.scss:slowburn/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass slowburn/scss/style.scss:slowburn/css/style.min.css slowburn/scss/style-dark.scss:slowburn/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass slowburn/scss/style-dark.scss slowburn/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass slowburn/scss/style-dark.scss slowburn/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass slowburn/scss/style.scss slowburn/css/style.css --no-source-map",
+    "style-light-min": "sass slowburn/scss/style.scss slowburn/css/style.min.css --no-source-map --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.7",
+    "stylelint": "^16.1.0",
+    "stylelint-config-sass-guidelines": "^11.0.0"
+  }
+}

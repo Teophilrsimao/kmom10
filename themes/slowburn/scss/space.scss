@@ -1,0 +1,88 @@
+.space {
+    width: 100%;
+    padding: 5em 3em;
+    color: $primary;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.space .wellcome {
+    text-align: center;
+    align-self: center;
+    grid-column: 2 / span 5;
+    text-shadow: none;
+}
+
+.space .wellcome p {
+    text-align: center;
+    color: $text;
+    padding: 0;
+}
+
+/*.space img{
+    grid-column: 8 / span 5;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+.space picture{
+    border: none;
+    align-self: center;
+    width: 100%;
+    grid-column: 8 / span 5;
+}
+
+.space picture source, .space picture img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.space:nth-child(3) {
+    background-color: $text;
+}
+
+.space:nth-child(3) picture{
+    grid-column: 2 / span 5;
+}
+
+.space:nth-child(3) .wellcome{
+    grid-column: 8 / span 5;
+}
+
+.space:nth-child(3) .wellcome h1{
+    color: $primary;
+}
+
+.space:nth-child(3) .wellcome p{
+    color: $primary;
+}
+
+.space .wellcome, .space:nth-child(3) .wellcome{
+    font-weight: bold;
+}
+
+.space .wellcome h1, .space:nth-child(3) .wellcome h1{
+    font-size: 50px;
+}
+
+@media (max-width: 800px) {
+    .space .wellcome {
+        grid-column: 1 / span 13;
+    }
+    .space .wellcome p {
+        padding-bottom: 2em;
+    }
+    .space picture {
+        grid-column: 1 / span 13;
+    }
+    .space:nth-child(3) .wellcome{
+        grid-column: 1 / span 13;
+        order: 1;
+    }
+    .space:nth-child(3) .wellcome p {
+        padding-bottom: 2em;
+    }
+    .space:nth-child(3) picture{
+        grid-column: 1 / span 13;
+        order: 2;
+    }
+}

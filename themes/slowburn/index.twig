@@ -1,0 +1,34 @@
+{% include 'incl/header.twig' %}
+
+<body id="body">
+    {% include 'incl/nav.twig' %}
+
+    <div class="hero">
+        <div class="wellcome">
+            <h1> Innovativ Webbutveckling för Digital Framgång </h1>
+            <p>
+                Välkommen till Bew Grorps Portfoliosida – din partner för banbrytande webbutveckling och digitala lösningar. 
+                Jag omsätter kreativa idéer till imponerande digitala verkligheter och stöttar företag i att lyckas online. 
+                Med fokus på användarvänliga och estetiskt tilltalande webbplatser, erbjuder jag skräddarsydda lösningar 
+                över olika plattformar och teknologier.
+            </p>
+            <p>
+                ew Grorp är mer än en leverantör av webbutvecklingstjänster; det är din långsiktiga partner för onlineframgång. 
+                Utforska mitt portfolio och låt oss diskutera hur jag kan hjälpa dig att skapa en imponerande digital närvaro och 
+                nå dina affärsmål online. Med Bew Grorp vid din sida blir din framgång på nätet banbrytande och minnesvärd.
+            </p>
+        </div>
+        <div class="heroimg" id="heroimg">
+            <div id="shape"></div>
+        </div>
+    </div>
+
+    <div class="main" id="main" role="main">
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+    <script src="{{ theme_url }}/../slowburn/js/shape.js" type="text/javascript"></script>
+</body>
+
+</html>

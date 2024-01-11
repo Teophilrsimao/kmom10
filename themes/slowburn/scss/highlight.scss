@@ -1,0 +1,25 @@
+.highlight {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.highlight .scroller {
+    grid-column: 1 / span 13;
+    margin: 0;
+    height: 100px;
+    max-width: 100%;
+    background-color: $text;
+    color: $primary;
+}
+
+.highlight .scroller__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.highlight .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: none;
+    mask: none;
+}

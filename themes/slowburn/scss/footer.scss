@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $text;
+}
+
+.footer p {
+    font-weight: bolder;
+    padding-left: 0.5em;
+    color: $primary;
+}
+
+.footer a {
+    color: $primary;
+    text-decoration: none;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
+.copy {
+    padding: 1em 1em 1em 3em;
+    display: flex;
+    align-items: center;
+    color: $primary;
+}
+
+.social {
+    padding: 1em 2em 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.copy span{
+    padding-left: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social {
+        padding: 0.5em 0 0.1em 0;
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        padding: 0.6em 0 0.6em 0;
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}

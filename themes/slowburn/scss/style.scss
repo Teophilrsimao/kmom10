@@ -1,0 +1,24 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'general';
+@import 'typografy';
+@import 'nav';
+@import 'scroll';
+@import 'navanimate';
+@import 'headeranime';
+@import 'hero';
+@import 'highlight';
+@import 'scroller';
+@import 'about';
+@import 'space';
+@import 'documentation';

@@ -1,0 +1,52 @@
+.header, .site-header , .title, .logo, .nav {
+    transition: all 0.3s ease;
+}
+
+.header.small .title,
+.header.small .logo{
+    transform: scale(0.5);
+}
+
+.header.small .nav {
+    transform: scale(0.9);
+}
+
+.header.small .logo {
+    padding: 0.5em 0 0.5em 1.5em;
+}
+
+.header.small .title {
+    display: none;
+    padding: 0;
+}
+
+.header.small .nav {
+    padding: 0.9em 2.7em 0.9em 0;
+}
+
+@media (max-width: 767px) {
+
+    .header, .site-header , .title, .logo, .nav {
+        transition: none;
+    }
+
+    .header.small .title,
+    .header.small .logo,
+    .header.small .nav {
+        transform: none;
+    }
+
+    .header.small .logo {
+        max-width: 30%;
+        padding: 1em;
+    }
+
+    .header.small .title {
+        display: none;
+        min-width: 50%;
+    }
+
+    .header.small .nav {
+        padding: 0;
+    }
+}

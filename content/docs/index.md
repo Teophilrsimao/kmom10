@@ -1,13 +1,107 @@
 ---
 Title: Docs
 Description: Documentation that came with Pico.
-# hidden: true
+Template: documentation
+hidden: true
 ---
 
-## Welcome to Pico
+<div class="scroller" data-direction="left" data-speed="fast">
+  <div class="scroller__inner">
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+        <h1>Documentation</h1>
+  </div>
+</div>
 
-Congratulations, you have successfully installed [Pico][] %version%.
-%meta.description% <!-- replaced by the above Description header -->
+<div class="docs">
+  <h2>Documentation av processen bakom webbplatsen</h2>
+  <p> 
+  Jag valde att skape en hemsida till egenföretagare <strong>Bew Gorp</strong>, som är en webbprogrammerare, webbutvecklare och 
+  wbbdesigner. Tanken bakom webbplatsen är att den ska ge en känsla av renhet och minimalism samtidigt som den känns levande. 
+  I just denna sida kommer jag att dokumentera processen bakom skapandet av webbplatsen och berätta mer och dem gjorda valen.
+  </p>
+</div>
+<div class="docs">
+  <h3>Färgpaletten</h3>
+  <ul>
+    <li style="background-color: #333333">1</li>
+    <li style="background-color: #ffffff">2</li>
+    <li style="background-color: #3498db">3</li>
+    <li style="background-color: #e74c3c">4</li>
+    <li style="background-color: #666666">5</li>
+  </ul>
+  <p> 
+  Jag valde att använda färg nummer <strong>2</strong> som primära färger eftersom vit assossieras oftas assossieras med 
+  renhet, enkelhet och neutralitet, med tanke på vad jag ville uppnå med hemsidan så passar denna färg väldigt bra som primära färgen. Färg nummer <strong>1</strong> är text färgen, denna färg passar bra eftersom den skapar en bra mäng kontrast 
+  som tillåter att texten syns och kan läsas. Färgerna <strong>3</strong> och <strong>4</strong> används för huvudrubriker 
+  så att sidan får lite mer liv. Färgerna passar eftersom dem skapar en bra kontrast mot den vita backrundet.
+  </p>
+</div>
+<div class="docs">
+  <h3>Typografin</h3>
+  <p> 
+  Jag valde att använda mig av 'Roboto' fonten som är skapad av Google. Fonten är väldigt ren, neutral och lätt att läsa. 
+  Fonten är även skapad specifikt för optimalt läsning mellan olika enheter. Vilket gör det väldigt bra val om man vill skapa en responsiv webbplats. I visa sidor i hemsidan där det finns mycket text valde jag att vara lite mer kreativ med fonten för att det ska vara lite roligt att vara inne på dem sidor. medan i andra sidor där det finns bilder etc så är fonten i standard läge. 
+  </p>
+</div>
+<div class="docs">
+  <h3>Designprinciper</h3>
+  <p> 
+  Föruton att vara en ren, minimalistisk och levande webbplats. Så ville jag även att varje sida skulle kännas unikt, men fortfarande bålla sammanhörigheten. I och med det så använde jag mig av ganska många desinprinciper. Här är dem.
+  </p>
+  <p> 
+  <strong>Linjer:</strong> Kanske den mest tydliga designprincipen på webbplatsen. Den används på alla sidor i wbbplatsen för 
+  att tydligtgöra för användaren var alla elementer ligger på sidan  och var på en sida man befinner sig.
+  </p>
+  <p> 
+  <strong>Repetition och balans:</strong> Anänds främst på highlight sidan där man repeterar samma typ av element under varandrar, detta gör även att en balans skapas efetrsom elementerna vägger alltid lika mycket. 
+  </p>
+  <p> 
+  <strong>Symmetri:</strong> Symmetri används på About sidan, jag valde att ha det på just den sida eftesom den innehåller mycket test. Och mycket test kan vara tråkigt om det ser oordnad ut, så för att göra det mer intresanr för användarens ögon så valde jag att göra innehållet på sidan symmetrisk.
+  </p>
+  <p>
+  <strong>Grid:</strong> Detta används i princip för att skapa varje sida i webbplatsen, placering av elemet, text och allt som har med sidorna i webbplatsen att göra.
+  </p>
+  <p>
+  <strong>Rörelse:</strong> Rörelse används för att göra webbplatsen mer levande, tanken är att varje sida. varje sig användaren scrollar eller bara står stlla så ska den kännas som att händer något trots den minimalitiska designen.
+  </p>
+  <p>
+  <strong>Djup:</strong> Djup används på varje bild på hemsidan, det skapar en 3 dimensionerllig känsla som skapar lite mer liv på hemsidan. 
+  </p>
+</div>
+<div class="docs">
+  <h3>SASS</h3>
+  <p>
+  SASS eller SCSS koden är uppdelade på så sätt att var sida och varje functionalitet har en eegen SCSS fil. Det Gör det enekelt inte bara för att göra en ändrigt i en specifk sida. Men också i en function som inte rigt fungerar. Tex 'Scroller.scss' filen. om något med scrollern inte hade fungerar så ver jag direkt var jag ska kolla först.
+  </p>
+</div>
+
+
+
+
+
+<!--Dokumentera färgpaletten och berätta hur du valde färgerna.
+Beskriv typografin, designprinciper och designelement som du använt.
+Berätta vilken känsla som kunden vill uppnå med webbplatsen.
+Beskriv hur du valt att dela upp din SASS-kod.-->
+
+
+
+
+
+
+
+
+
+
+<!--Congratulations, you have successfully installed [Pico][] %version%.
+%meta.description%  replaced by the above Description header 
 
 ## Creating Content
 
@@ -411,4 +505,4 @@ For more help have a look at the Pico documentation at http://picocms.org/docs.
 [PluginUpgrade]: http://picocms.org/development/#upgrade
 [ModRewrite]: https://httpd.apache.org/docs/current/mod/mod_rewrite.html
 [AllowOverride]: https://httpd.apache.org/docs/current/mod/core.html#allowoverride
-[NginxConfig]: http://picocms.org/in-depth/nginx/
+[NginxConfig]: http://picocms.org/in-depth/nginx/-->

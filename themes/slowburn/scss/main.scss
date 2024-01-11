@@ -1,0 +1,12 @@
+.main {
+    flex: 1 0 auto;
+    padding: 5em 0 3em 0;
+    background-color: $primary;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.main h1 {
+    grid-column: 1 / span 13;
+    justify-self: center;
+}
